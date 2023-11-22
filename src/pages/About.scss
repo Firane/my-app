@@ -1,0 +1,21 @@
+@import "../abstracts/mixins.scss";
+
+.dropdowns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#highest {
+  height: 250px;
+}
+
+#desktop__display {
+  width: 85%;
+  margin: 0 auto;
+  @include mobile {
+    width: 100%;
+    margin: unset;
+  }
+}

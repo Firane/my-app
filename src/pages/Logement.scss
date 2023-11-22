@@ -1,0 +1,84 @@
+@import "../abstracts/mixins.scss";
+
+.logement__content {
+  color: #ff6060;
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: 5rem;
+    @include mobile {
+      flex-direction: column;
+      column-gap: unset;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: space-between;
+    @include mobile {
+      flex-direction: row-reverse;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    &__host {
+      display: flex;
+      align-items: center;
+      &__name {
+        white-space: pre-wrap;
+        margin-right: 0.5rem;
+        row-gap: 3rem;
+        line-height: 1.5rem;
+        @include mobile {
+          font-size: 0.8rem;
+          line-height: 1rem;
+          text-align: right;
+        }
+      }
+      &__picture {
+        background: #c4c4c4;
+        height: 70px;
+        border-radius: 50%;
+        @include mobile {
+          height: 2.5rem;
+        }
+        & > img {
+          border-radius: 50px;
+          height: 100%;
+        }
+      }
+    }
+    &__stars {
+      & > ul {
+        list-style-type: none;
+        display: flex;
+        margin-bottom: 0;
+        font-size: 1.2rem;
+        column-gap: 0.7rem;
+        @include mobile {
+          column-gap: 0.5rem;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+  &__left {
+    & > h1 {
+      @include mobile {
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+    }
+    & > p {
+      @include mobile {
+        font-size: smaller;
+        font-weight: 500;
+      }
+    }
+  }
+}

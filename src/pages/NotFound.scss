@@ -1,0 +1,37 @@
+@import "../abstracts/mixins.scss";
+
+.notfound {
+  text-align: center;
+  color: #ff6060;
+  max-width: 1200px;
+  min-width: 600px;
+  margin-bottom: 10rem;
+
+  @include mobile {
+    min-width: unset;
+    margin-top: 15rem;
+  }
+  &__title {
+    font-size: 13rem;
+    margin-bottom: 3rem;
+    @include mobile {
+      font-size: 7rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+  }
+  & > p {
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    @include mobile {
+      font-size: 1.2rem;
+      margin-bottom: 10rem;
+      margin-top: 0;
+      font-weight: 500;
+    }
+  }
+  & > a {
+    color: #ff6060;
+    font-weight: 500;
+  }
+}

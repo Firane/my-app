@@ -1,0 +1,35 @@
+@keyframes fadeout {
+  from {
+    height: 7rem;
+  }
+  100% {
+    height: 0rem;
+  }
+}
+
+@keyframes fadein {
+  from {
+    height: 0rem;
+  }
+  to {
+    height: 7rem;
+  }
+}
+
+@keyframes fadeoutmobile {
+  from {
+    height: 8.5rem;
+  }
+  100% {
+    height: 0rem;
+  }
+}
+
+@keyframes fadeinmobile {
+  from {
+    height: 0rem;
+  }
+  to {
+    height: 8.5rem;
+  }
+}

@@ -1,0 +1,48 @@
+@import "../../abstracts/mixins.scss";
+
+.carrousel {
+  position: relative;
+  &__img {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2rem;
+    object-fit: cover;
+    border-radius: 25px;
+    min-width: 1000px;
+    @media all and (max-width: 1250px) {
+      min-width: 800px;
+    }
+    @media all and (max-width: 1050px) {
+      min-width: 600px;
+    }
+    @include mobile {
+      height: 20rem;
+      min-width: unset;
+      margin: 0px;
+    }
+  }
+  &__arrows {
+    &.hidden {
+      visibility: hidden;
+    }
+
+    &__leftArrow {
+      position: absolute;
+      top: 50%;
+      left: 3%;
+      transform: translate(0%, -50%);
+      @include mobile {
+        height: 2rem;
+      }
+    }
+    &__rightArrow {
+      position: absolute;
+      top: 50%;
+      right: 3%;
+      transform: translate(0%, -50%);
+      @include mobile {
+        height: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.notfound {
+  text-align: center;
+  color: #ff6060;
+  max-width: 1200px;
+  min-width: 600px;
+  margin-bottom: 10rem;
+}
+@media all and (max-width: 768px) {
+  .notfound {
+    min-width: unset;
+    margin-top: 15rem;
+  }
+}
+.notfound__title {
+  font-size: 13rem;
+  margin-bottom: 3rem;
+}
+@media all and (max-width: 768px) {
+  .notfound__title {
+    font-size: 7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+}
+.notfound > p {
+  font-size: 2rem;
+  margin-bottom: 10rem;
+}
+@media all and (max-width: 768px) {
+  .notfound > p {
+    font-size: 1.2rem;
+    margin-bottom: 10rem;
+    margin-top: 0;
+    font-weight: 500;
+  }
+}
+.notfound > a {
+  color: #ff6060;
+  font-weight: 500;
+}/*# sourceMappingURL=NotFound.css.map */

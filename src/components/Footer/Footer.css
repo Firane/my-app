@@ -1,0 +1,36 @@
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 142.6%;
+  height: 10rem;
+}
+@media all and (max-width: 768px) {
+  footer {
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+footer > div {
+  padding-top: 3rem;
+}
+@media all and (max-width: 768px) {
+  footer > div {
+    padding-top: 0rem;
+    font-weight: 400;
+  }
+}
+footer > p {
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+@media all and (max-width: 768px) {
+  footer > p {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=Footer.css.map */
